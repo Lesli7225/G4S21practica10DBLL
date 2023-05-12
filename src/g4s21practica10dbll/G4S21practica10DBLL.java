@@ -2,13 +2,13 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
-package g4s21p10dbll;
+package g4s21practica10dbll;
 
 /**
  *
  * @author deloe
  */
-public class G4S21p10DBLL {
+public class G4S21practica10DBLL {
 
     /**
      * @param args the command line arguments

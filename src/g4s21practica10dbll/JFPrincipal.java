@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-package g4s21p10dbll;
+package g4s21practica10dbll;
 
 import javax.swing.table.DefaultTableModel;
 
@@ -11,7 +11,7 @@ import javax.swing.table.DefaultTableModel;
  * @author deloe
  */
 public class JFPrincipal extends javax.swing.JFrame {
-DefaultTableModel Tablales;
+DefaultTableModel Tabladeles;
     /**
      * Creates new form JFPrincipal
      */
@@ -110,11 +110,8 @@ DefaultTableModel Tablales;
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(txtEdad, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(txtNombre, javax.swing.GroupLayout.PREFERRED_SIZE, 350, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(0, 0, Short.MAX_VALUE))))
-            .addGroup(layout.createSequentialGroup()
-                .addGap(54, 54, 54)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 578, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addComponent(jScrollPane1)))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -151,12 +148,12 @@ DefaultTableModel Tablales;
 
     private void btnAgregarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAgregarActionPerformed
         // TODO add your handling code here:
-        String Nombre = this.txtNombre.getText();
+         String Nombre = this.txtNombre.getText();
         Integer Edad = Integer.valueOf(this.txtEdad.getText());
         String Correo = this.txtCorreo.getText();
-        Tablales = (DefaultTableModel)  this.jTable1.getModel();
+        Tabladeles = (DefaultTableModel)  this.jTable1.getModel();
         Object datos [] = new Object[] {Nombre, Edad, Correo};
-        Tablales.addRow(datos);
+        Tabladeles.addRow(datos);
     }//GEN-LAST:event_btnAgregarActionPerformed
 
     /**
